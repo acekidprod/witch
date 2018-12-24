@@ -6,16 +6,20 @@ public class PlayerController : MonoBehaviour {
 
     public float walkSpeed = 5;
     public float runSpeed = 10;
+    public float gravity = -12;
 
     public float turnSmoothTime = 0.08f;
     float turnSmoothVelocity;
+    float velocityY;
 
     Animator animator;
     Transform cameraT;
+    CharacterController controller;
 
 	void Start () {
         animator = GetComponent<Animator>();
         cameraT = Camera.main.transform;
+        controller = GetComponent<CharacterController>();
 	}
 
 	void Update () {
@@ -31,7 +35,15 @@ public class PlayerController : MonoBehaviour {
         bool running = Input.GetKey(KeyCode.LeftShift);
         float speed = ((running) ? runSpeed : walkSpeed) * inputDir.magnitude;
 
-        transform.Translate(transform.forward * speed * Time.deltaTime, Space.World);
+        velocityY += Time.deltaTime * gravity;
+        Vector3 velocity = transform.forward * speed + Vector3.up * velocityY;
+
+        controller.Move(velocity * Time.deltaTime);
+
+        if (controller.isGrounded)
+        {
+            velocityY = 0;
+        }
 
         float animationSpeedPercent = ((running) ? 1 : .5f) * inputDir.magnitude;
         animator.SetFloat("speedPercent", animationSpeedPercent);
