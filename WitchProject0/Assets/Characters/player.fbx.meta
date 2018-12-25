@@ -364,14 +364,9 @@ ModelImporter:
     13700050: 1Body
     13700052: 1Head
     2186277476908879412: ImportLogs
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: SkinColor
-    second: {fileID: 2100000, guid: 8c27b15028b764e88ae55febda9c0ee3, type: 2}
+  externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1

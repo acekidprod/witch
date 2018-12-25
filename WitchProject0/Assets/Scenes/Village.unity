@@ -1221,10 +1221,10 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100056, guid: 85cf7d797757b5e4abe28bf090b53266, type: 3}
-  - {fileID: 2100060, guid: 85cf7d797757b5e4abe28bf090b53266, type: 3}
-  - {fileID: 2100058, guid: 85cf7d797757b5e4abe28bf090b53266, type: 3}
-  - {fileID: 2100062, guid: 85cf7d797757b5e4abe28bf090b53266, type: 3}
+  - {fileID: 2100000, guid: 8c27b15028b764e88ae55febda9c0ee3, type: 2}
+  - {fileID: 2100000, guid: 8c27b15028b764e88ae55febda9c0ee3, type: 2}
+  - {fileID: 2100000, guid: ac3446e3d40874a0fb5fa9b14aa2aa87, type: 2}
+  - {fileID: 2100000, guid: 82ac0fb027bc844fdaf4547e12c87f41, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3995,9 +3995,9 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100056, guid: 85cf7d797757b5e4abe28bf090b53266, type: 3}
-  - {fileID: 2100058, guid: 85cf7d797757b5e4abe28bf090b53266, type: 3}
-  - {fileID: 2100060, guid: 85cf7d797757b5e4abe28bf090b53266, type: 3}
+  - {fileID: 2100000, guid: 8c27b15028b764e88ae55febda9c0ee3, type: 2}
+  - {fileID: 2100000, guid: ac3446e3d40874a0fb5fa9b14aa2aa87, type: 2}
+  - {fileID: 2100000, guid: 8c27b15028b764e88ae55febda9c0ee3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9101,7 +9101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 3
-  runSpeed: 8
+  runSpeed: 5
   gravity: -40
   turnSmoothTime: 0.08
 --- !u!143 &1924612207
@@ -9115,13 +9115,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 3.23
-  m_Radius: 0.26
+  m_Height: 2.71
+  m_Radius: 0.36
   m_SlopeLimit: 60
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1.7, z: 0}
+  m_Center: {x: 0, y: 1.35, z: 0.14}
 --- !u!114 &1924612208
 MonoBehaviour:
   m_ObjectHideFlags: 0
