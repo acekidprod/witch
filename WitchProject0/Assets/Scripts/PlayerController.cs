@@ -39,13 +39,14 @@ public class PlayerController : MonoBehaviour {
         Vector3 velocity = transform.forward * speed + Vector3.up * velocityY;
 
         controller.Move(velocity * Time.deltaTime);
+        speed = new Vector2(controller.velocity.x, controller.velocity.z).magnitude;
 
         if (controller.isGrounded)
         {
             velocityY = 0;
         }
 
-        float animationSpeedPercent = ((running) ? 1 : .5f) * inputDir.magnitude;
+        float animationSpeedPercent = ((running) ? speed / runSpeed : speed / walkSpeed * .5f);
         animator.SetFloat("speedPercent", animationSpeedPercent);
 	}
 }
