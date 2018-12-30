@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 06918cc517fe2e14197b93e4e45b7e2e
+guid: ae3173127529542c6846061ffbfd1237
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -13,8 +13,6 @@ ModelImporter:
     100014: Cube.005
     100016: Cube.006
     100018: Cube.007
-    100020: Cube.008
-    100022: Cube.009
     400000: Cube
     400002: Cube.001
     400004: Cube.002
@@ -25,8 +23,6 @@ ModelImporter:
     400014: Cube.005
     400016: Cube.006
     400018: Cube.007
-    400020: Cube.008
-    400022: Cube.009
     2100000: dirt
     2100002: herb
     2300000: Cube
@@ -37,8 +33,6 @@ ModelImporter:
     2300010: Cube.005
     2300012: Cube.006
     2300014: Cube.007
-    2300016: Cube.008
-    2300018: Cube.009
     3300000: Cube
     3300002: Cube.001
     3300004: Cube.002
@@ -47,18 +41,14 @@ ModelImporter:
     3300010: Cube.005
     3300012: Cube.006
     3300014: Cube.007
-    3300016: Cube.008
-    3300018: Cube.009
     4300000: Cube.003
     4300002: Cube.002
     4300004: Cube.001
     4300006: Cube
-    4300008: Cube.004
-    4300010: Cube.009
-    4300012: Cube.008
-    4300014: Cube.007
-    4300016: Cube.006
-    4300018: Cube.005
+    4300008: Cube.007
+    4300010: Cube.006
+    4300012: Cube.005
+    4300014: Cube.004
     10800000: Sun
   externalObjects: {}
   materials:
@@ -94,6 +84,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -118,6 +109,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
